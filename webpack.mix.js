@@ -1,6 +1,6 @@
 const path = require('path');
 const mix = require('laravel-mix');
-
+// mix.setPublicPath("html")
 
 
 mix.webpackConfig({
@@ -24,9 +24,9 @@ mix.webpackConfig({
  |
  */
 
-mix.js('resources/js/app.js', 'html/js')
-   .sass('resources/sass/app.scss', 'html/css');
+mix.js('resources/js/app.js', 'js')
+   .sass('resources/sass/app.scss', 'css');
 
-mix.copy('coreui/public', 'html');
+mix.copy('coreui/public', 'public');
 
 
