@@ -1,0 +1,14 @@
+25-08-2022 SAGAR
+--------------------------------------------------------
+
+ALTER TABLE `user_bank_details` CHANGE `bank_name` `bankName` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL, CHANGE `account_no` `accountNo` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL;
+
+ALTER TABLE `user_bank_details` ADD `accountHolderName` VARCHAR(200) NULL DEFAULT NULL AFTER `accountNo`, ADD `ifscCode` VARCHAR(50) NULL DEFAULT NULL AFTER `accountHolderName`, ADD `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `ifscCode`, ADD `updated_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `created_at`;
+
+CREATE TABLE `testq_uyr`.`doctor_booking_timeslot` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `user_id` INT(11) NULL DEFAULT NULL , `day` VARCHAR(100) NULL DEFAULT NULL , `fromTime` VARCHAR(100) NULL DEFAULT NULL , `toTime` VARCHAR(100) NULL DEFAULT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+02-12-2022 | SAGAR MORE
+--------------------------------------------------------
+INSERT INTO `permissions` (`id`, `name`, `slug`, `href`, `check_slug`, `parent_id`, `is_menu`, `icon`, `order`, `status`, `created_at`, `updated_at`) VALUES (NULL, 'Fees', 'Fees', 'fees', 'Fees', '13', '1', NULL, '8', '1', '2021-05-27 12:13:37', '2022-01-07 23:22:05');
+
+CREATE TABLE `testq_uyr_live`.`master_fees` ( `id` BIGINT(11) NOT NULL AUTO_INCREMENT , `visitType` VARCHAR(250) NULL DEFAULT NULL , `betweenKm` VARCHAR(250) NULL DEFAULT NULL , `amount` VARCHAR(250) NULL DEFAULT NULL , `status` TINYINT NOT NULL DEFAULT '1' , `isDeleted` TINYINT NOT NULL DEFAULT '0' , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;

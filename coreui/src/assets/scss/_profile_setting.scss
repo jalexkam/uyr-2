@@ -1,0 +1,94 @@
+
+   .profile-img .file {
+   position: relative;
+   }
+   .profile-img{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   min-height: 167px;
+   }
+   .profile-img .file input {
+   position: absolute;
+   opacity: 0;
+   right: 0;
+   top: 0;
+   cursor: pointer;
+   width: 100%;
+   height: 100%;
+   }
+   .profileimg {
+   width: 100px;
+   height: 100px;
+   border: 1px solid #ebedef;
+   overflow: hidden;
+   margin-right: 16px;
+   }
+   .profileimg img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   }
+
+
+   .profile_widget_img {
+    margin: auto;
+}
+
+.profile_widget_img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-widget-info {
+    display: block;
+    text-align: center;
+}
+
+.widget-profile {
+ background-color: #fff;
+ border-bottom: 1px solid #f0f0f0;
+ padding: 20px;
+}
+.profile_menu ul li a {
+    color: #757575;
+    display: block;
+    padding: 16px 20px;
+}
+
+.profile_menu ul li {
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    list-style: none;
+}
+.profile_menu ul li:last-child{
+  border-bottom: 0
+}
+
+.profile_menu ul {
+    margin: 0;
+    padding: 0;
+}
+.profile-widget-info h3 {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.profile_menu ul li a i,
+.profile_menu ul li a svg {
+    margin-right: 10px;
+}
+.upload_btn {
+    background: transparent;
+    color: #e80607;
+    padding: 3px 13px;
+    border-radius: 8px;
+    border:2px solid #e80607;
+}
+.upload_btn:hover {
+    background: #e80607;
+    color: #fff;
+    /*border:2px solid #e80607;*/
+}

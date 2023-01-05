@@ -1,0 +1,122 @@
+ img.review_img {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 35px;
+}
+ul.comment_reply {
+    margin-left: 4.5rem;
+}
+
+.comment_body {
+    margin-left: 30px;
+    position: relative;
+}
+h5.comment_author {
+    color: #272b41;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.5
+}
+.review-count.rating {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+}
+span.comment_date {
+    color: #757575;
+    line-height: 1.5;
+}
+
+p.comment-content {
+    color: #757575;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.meta_data {
+    position: relative;
+    margin-bottom: 10px;
+}
+.recommended {
+    color: #28a745;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+a.comment-btn {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ff5050;
+}
+.comment-reply {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p.recommend-btn {
+    margin: 0;
+    color: #757575
+}
+
+p.recommend-btn a {
+    border: 1px solid rgba(128,137,150,0.4);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px 12px;
+    color: #757575;
+    margin-left: 3px;
+    margin-right: 3px;
+    transition: all .3s;
+}
+ul.commernt_list li,
+ul.comment_reply li {
+    list-style: none;
+}
+.review_listing > ul li + li {
+    margin-top: 20px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
+
+.star-rating {
+    direction: rtl;
+}
+.star-rating input[type=radio] {
+    display: none
+}
+.star-rating label {
+    color: #bbb;
+    cursor: pointer;
+    font-size: 36px;
+    padding: 2px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type=radio]:checked ~ label {
+    color: #f2b600
+}
+
+a.like-btn:hover {
+    background: #28a745;
+    color: #fff;
+    border: 1px solid #28a745;
+}
+a.dislike-btn:hover {
+    background: #ff5050;
+    color: #fff;
+    border: 1px solid #ff5050;
+}

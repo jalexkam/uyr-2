@@ -1,0 +1,115 @@
+.table thead th,
+.table td {
+    padding: 0.1rem;
+    vertical-align: middle !important;
+}
+
+/*.table-hover tbody tr:hover {
+    background-color: #321fdb2e;
+}*/
+
+table tr td:first-child,
+table tr th:first-child {
+    padding-left: 7px;
+}
+
+table tr td:last-child,
+table tr th:last-child {
+    padding-right: 7px;
+}
+
+table tr td input.form-check-input {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+table.permission-padding tr td:last-child {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+table.table th {
+    background: #2c449e;
+    color: #fff;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    /*background-color: #f4f5fa;*/
+    background-color: #f6f8ff;
+}
+
+.table-hover tbody tr:hover {
+    /*background-color: #e8eaf4;*/
+    background-color: #f2f5fff7;
+}
+
+.select-all button.btn.dropdown-toggle.btn-light {
+    background: transparent;
+    border: 0;
+    padding: 2px 3px;
+}
+
+.select-all{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+table tr td span.p-status {
+    display: block;
+    max-width: 100px;
+    text-align: center;
+    margin: auto;
+}
+.handle {
+    cursor: move;
+    padding: 5px;
+}
+
+.pagination li a {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #b8bdc8;
+    margin: 0 2px;
+    color: #78849e;
+}
+.pagination li.active a {
+    background: #001d6d;
+    color: #ffffff;
+    border-color: #001d6d;
+}
+
+.swal2-icon.swal2-warning {
+    border-color: #facea8;
+    color: #f8bb86;
+}
+
+
+.swal2-popup {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25;
+    border: none;
+    border-radius: 0.3125em;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    }
+
+/*---------- order-table --------*/
+
+/*.order_table tbody tr:nth-of-type(4n) {
+    background: #f6f8ff !important;
+}*/
